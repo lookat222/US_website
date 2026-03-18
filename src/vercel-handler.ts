@@ -1,5 +1,7 @@
+// vercel-handler is the entrypoint for Vercel Node.js serverless function
+// built by: node build.mjs  →  dist/api/index.js
 import type { IncomingMessage, ServerResponse } from 'node:http'
-import app from '../src/index'
+import app from './index'
 
 export default async function handler(req: IncomingMessage, res: ServerResponse) {
   const host = req.headers.host ?? 'localhost'
