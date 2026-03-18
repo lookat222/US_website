@@ -1,6 +1,5 @@
 {
   "name": "webapp",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "node build.mjs",
